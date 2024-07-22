@@ -11,7 +11,7 @@ WITH base_table AS (
         quantity,
         amount,
         region
-    FROM `api-project-928654461237.aruna_datamart_nelayan.data_buying_dual_source`
+    FROM `buying_data`
     WHERE type = 'Nelayan' AND id_nelayan IS NOT NULL AND name_supplier != ''
 ),
 
